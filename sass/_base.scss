@@ -1,0 +1,52 @@
+%namespace {
+  position: relative;
+}
+
+/* ======================================== 
+  Common and base styles
+  ======================================== */
+._header,
+._main,
+._footer {
+  @extend %namespace;
+}
+
+._unstyle {
+  list-style: none;
+}
+
+._title {
+  font-size: 26px;
+}
+
+._x-grid {
+  @extend %namespace;
+}
+
+._x-row {
+  @extend %namespace;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+._x-col {
+  float: left;
+}
+
+._post {
+  font-family: Helvetica, 'HelveticaNeue', Arial;
+}
+
+._post-title {
+  font-size: 26px;
+}
+
+._post-content {
+  font-size: 14px;
+  line-height: 1.6;
+}

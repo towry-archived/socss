@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>socss</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+  <div id="app" class="blog_">
+    <header class="_header header_ blog__header">
+      <h1 class="_title header__title">
+        title with global style and specific style
+      </h1>
+      <p class="description">
+        This is description, under <code>blog__header</code> namespace
+      </p>
+      <nav>
+        <ul class="_unstyle header__nav-ul">
+          <li class="header__nav-li">menu1</li>
+          <li class="header__nav-li">menu2</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="_main">
+      <div class="_x-grid a_">
+        <div class="_x-row">
+          <div class="_x-col a__col-1">
+            <div class="widgets widget_">
+              <div class="_widget">
+                <div class="_widget-title">
+                  <h3 class="widget__title">Make sure the <code>widget_</code> is unique</h3>
+                  <div class="_widget-content widget__content">
+                    <p>hello world</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="_x-col a__col-2">
+            <article class="_post">
+              <h2 class="_post-title">
+                This is post title
+              </h2>
+              <div class="_post-content">
+                <p>
+                  This is content. This is content. This is content. This is content. 
+                  This is content. This is content. This is content. This is content. 
+                  This is content. This is content. This is content. This is content. 
+                  This is content. This is content. This is content. 
+                </p>
+              </div>
+            </article>
+            <article class="_post">
+              <h2 class="_post-title">
+                This is post title
+              </h2>
+              <div class="_post-content">
+                This is content. This is content. This is content. 
+                This is content. This is content. This is content. This is content. 
+                This is content. This is content. This is content. This is content. 
+                This is content. This is content. This is content. This is content. 
+              </div>
+              </article>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="_footer">
+      
+    </footer>
+  </div>
+</body>
+</html>
